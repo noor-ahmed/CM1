@@ -69,6 +69,6 @@ class BonusAccountsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bonus_account_params
-      params.require(:bonus_account).permit(:ba_val_available, :ba_val_change, :ba_val_before, :ba_pulse, :ba_on_net_tariff, :ba_off_net_tariff, :ba_atw, :ba_call_destination,, :ba_priority)
+      params.require(:bonus_account).permit(:ba_val_available, :ba_val_change, :ba_val_before, :ba_pulse, :ba_on_net_tariff, :ba_off_net_tariff, :ba_atw, :ba_call_destination, :ba_priority)
     end
 end

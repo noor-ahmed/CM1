@@ -69,6 +69,6 @@ class OffersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def offer_params
-      params.require(:offer).permit(:name, :offer_pulse, :offer_on_net_tariff, :offer_off_net_tariff,, :offer_atw,, :offer_call_destination, :offer_priority)
+      params.require(:offer).permit(:name, :offer_pulse, :offer_on_net_tariff, :offer_off_net_tariff, :offer_atw, :offer_call_destination, :offer_priority)
     end
 end
