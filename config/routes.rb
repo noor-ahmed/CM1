@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'static#home'
   resources :call_charges
   resources :call_records
   resources :user_accounts

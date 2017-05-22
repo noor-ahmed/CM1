@@ -69,6 +69,6 @@ class CommunitiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def community_params
-      params.require(:community).permit(:name, :comm_pulse, :comm_on_net_tariff, :comm_off_net_tariff,, :comm_atw,, :comm_call_destination)
+      params.require(:community).permit(:name, :comm_pulse, :comm_on_net_tariff, :comm_off_net_tariff, :comm_atw, :comm_call_destination)
     end
 end

@@ -1,0 +1,2 @@
+module StaticContorllerHelper
+end
