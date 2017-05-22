@@ -1,0 +1,17 @@
+<%= form_for(call_record) do |f| %>
+  <% if call_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(call_record.errors.count, "error") %> prohibited this call_record from being saved:</h2>
+
+      <ul>
+      <% call_record.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

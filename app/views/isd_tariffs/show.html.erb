@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pulse:</strong>
+  <%= @isd_tariff.pulse %>
+</p>
+
+<p>
+  <strong>Tariff:</strong>
+  <%= @isd_tariff.tariff %>
+</p>
+
+<p>
+  <strong>Number prefix:</strong>
+  <%= @isd_tariff.number_prefix %>
+</p>
+
+<%= link_to 'Edit', edit_isd_tariff_path(@isd_tariff) %> |
+<%= link_to 'Back', isd_tariffs_path %>

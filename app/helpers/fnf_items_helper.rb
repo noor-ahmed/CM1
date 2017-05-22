@@ -1,0 +1,2 @@
+module FnfItemsHelper
+end

@@ -1,0 +1,27 @@
+<%= form_for(accumulator) do |f| %>
+  <% if accumulator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(accumulator.errors.count, "error") %> prohibited this accumulator from being saved:</h2>
+
+      <ul>
+      <% accumulator.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :acc_val_change %>
+    <%= f.text_field :acc_val_change %>
+  </div>
+
+  <div class="field">
+    <%= f.label :acc_val_available %>
+    <%= f.text_field :acc_val_available %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

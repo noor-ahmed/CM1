@@ -1,0 +1,32 @@
+<%= form_for(short_code) do |f| %>
+  <% if short_code.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(short_code.errors.count, "error") %> prohibited this short_code from being saved:</h2>
+
+      <ul>
+      <% short_code.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tariff %>
+    <%= f.text_field :tariff %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

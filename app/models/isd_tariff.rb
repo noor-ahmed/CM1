@@ -1,0 +1,2 @@
+class IsdTariff < ApplicationRecord
+end

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @offer.name %>
+</p>
+
+<p>
+  <strong>Offer pulse:</strong>
+  <%= @offer.offer_pulse %>
+</p>
+
+<p>
+  <strong>Offer on net tariff:</strong>
+  <%= @offer.offer_on_net_tariff %>
+</p>
+
+<p>
+  <strong>Offer off net tariff,:</strong>
+  <%= @offer.offer_off_net_tariff, %>
+</p>
+
+<p>
+  <strong>Offer atw,:</strong>
+  <%= @offer.offer_atw, %>
+</p>
+
+<p>
+  <strong>Offer call destination:</strong>
+  <%= @offer.offer_call_destination %>
+</p>
+
+<p>
+  <strong>Offer priority:</strong>
+  <%= @offer.offer_priority %>
+</p>
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>

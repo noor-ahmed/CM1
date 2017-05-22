@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>No of fnf:</strong>
+  <%= @fnf_item.no_of_fnf %>
+</p>
+
+<p>
+  <strong>Pulse:</strong>
+  <%= @fnf_item.pulse %>
+</p>
+
+<p>
+  <strong>Fnf on net tariff:</strong>
+  <%= @fnf_item.fnf_on_net_tariff %>
+</p>
+
+<p>
+  <strong>Fnf off net tariff:</strong>
+  <%= @fnf_item.fnf_off_net_tariff %>
+</p>
+
+<p>
+  <strong>Fnf atw:</strong>
+  <%= @fnf_item.fnf_atw %>
+</p>
+
+<p>
+  <strong>Fnf priority:</strong>
+  <%= @fnf_item.fnf_priority %>
+</p>
+
+<%= link_to 'Edit', edit_fnf_item_path(@fnf_item) %> |
+<%= link_to 'Back', fnf_items_path %>

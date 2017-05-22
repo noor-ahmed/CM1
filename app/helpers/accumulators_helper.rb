@@ -1,0 +1,2 @@
+module AccumulatorsHelper
+end

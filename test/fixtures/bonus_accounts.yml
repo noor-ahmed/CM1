@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ba_val_available: 
+  ba_val_change: 
+  ba_val_before: 
+  ba_pulse: 
+  ba_on_net_tariff: 
+  ba_off_net_tariff: 
+  ba_atw: 
+  ba_call_destination,: MyString
+  ba_priority: 1
+
+two:
+  ba_val_available: 
+  ba_val_change: 
+  ba_val_before: 
+  ba_pulse: 
+  ba_on_net_tariff: 
+  ba_off_net_tariff: 
+  ba_atw: 
+  ba_call_destination,: MyString
+  ba_priority: 1

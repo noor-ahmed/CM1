@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fnf Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>No of fnf</th>
+      <th>Pulse</th>
+      <th>Fnf on net tariff</th>
+      <th>Fnf off net tariff</th>
+      <th>Fnf atw</th>
+      <th>Fnf priority</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fnf_items.each do |fnf_item| %>
+      <tr>
+        <td><%= fnf_item.no_of_fnf %></td>
+        <td><%= fnf_item.pulse %></td>
+        <td><%= fnf_item.fnf_on_net_tariff %></td>
+        <td><%= fnf_item.fnf_off_net_tariff %></td>
+        <td><%= fnf_item.fnf_atw %></td>
+        <td><%= fnf_item.fnf_priority %></td>
+        <td><%= link_to 'Show', fnf_item %></td>
+        <td><%= link_to 'Edit', edit_fnf_item_path(fnf_item) %></td>
+        <td><%= link_to 'Destroy', fnf_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fnf Item', new_fnf_item_path %>

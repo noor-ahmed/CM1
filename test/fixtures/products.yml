@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  product_pulse: MyString
+  product_on_net_tariff: 1.5
+  product_off_net_tariff: 1.5
+  product_atw: MyString
+  product_call_destination: MyString
+  product_priority: 1
+
+two:
+  name: MyString
+  product_pulse: MyString
+  product_on_net_tariff: 1.5
+  product_off_net_tariff: 1.5
+  product_atw: MyString
+  product_call_destination: MyString
+  product_priority: 1

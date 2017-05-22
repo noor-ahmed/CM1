@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Services</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Service pulse</th>
+      <th>Service on net tariff</th>
+      <th>Service off net tariff,</th>
+      <th>Service atw,</th>
+      <th>Service call destination</th>
+      <th>Service priority</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @services.each do |service| %>
+      <tr>
+        <td><%= service.name %></td>
+        <td><%= service.service_pulse %></td>
+        <td><%= service.service_on_net_tariff %></td>
+        <td><%= service.service_off_net_tariff, %></td>
+        <td><%= service.service_atw, %></td>
+        <td><%= service.service_call_destination %></td>
+        <td><%= service.service_priority %></td>
+        <td><%= link_to 'Show', service %></td>
+        <td><%= link_to 'Edit', edit_service_path(service) %></td>
+        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Service', new_service_path %>

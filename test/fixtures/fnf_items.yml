@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  no_of_fnf: 1
+  pulse: MyString
+  fnf_on_net_tariff: 1.5
+  fnf_off_net_tariff: 1.5
+  fnf_atw: MyString
+  fnf_priority: 1
+
+two:
+  no_of_fnf: 1
+  pulse: MyString
+  fnf_on_net_tariff: 1.5
+  fnf_off_net_tariff: 1.5
+  fnf_atw: MyString
+  fnf_priority: 1

@@ -1,0 +1,32 @@
+<%= form_for(isd_tariff) do |f| %>
+  <% if isd_tariff.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(isd_tariff.errors.count, "error") %> prohibited this isd_tariff from being saved:</h2>
+
+      <ul>
+      <% isd_tariff.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pulse %>
+    <%= f.text_field :pulse %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tariff %>
+    <%= f.text_field :tariff %>
+  </div>
+
+  <div class="field">
+    <%= f.label :number_prefix %>
+    <%= f.text_field :number_prefix %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

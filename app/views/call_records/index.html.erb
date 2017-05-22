@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Call Records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @call_records.each do |call_record| %>
+      <tr>
+        <td><%= link_to 'Show', call_record %></td>
+        <td><%= link_to 'Edit', edit_call_record_path(call_record) %></td>
+        <td><%= link_to 'Destroy', call_record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Call Record', new_call_record_path %>

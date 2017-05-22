@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Acc val change:</strong>
+  <%= @accumulator.acc_val_change %>
+</p>
+
+<p>
+  <strong>Acc val available:</strong>
+  <%= @accumulator.acc_val_available %>
+</p>
+
+<%= link_to 'Edit', edit_accumulator_path(@accumulator) %> |
+<%= link_to 'Back', accumulators_path %>

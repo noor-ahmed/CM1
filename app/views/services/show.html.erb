@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @service.name %>
+</p>
+
+<p>
+  <strong>Service pulse:</strong>
+  <%= @service.service_pulse %>
+</p>
+
+<p>
+  <strong>Service on net tariff:</strong>
+  <%= @service.service_on_net_tariff %>
+</p>
+
+<p>
+  <strong>Service off net tariff,:</strong>
+  <%= @service.service_off_net_tariff, %>
+</p>
+
+<p>
+  <strong>Service atw,:</strong>
+  <%= @service.service_atw, %>
+</p>
+
+<p>
+  <strong>Service call destination:</strong>
+  <%= @service.service_call_destination %>
+</p>
+
+<p>
+  <strong>Service priority:</strong>
+  <%= @service.service_priority %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

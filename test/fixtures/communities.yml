@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  comm_pulse: 
+  comm_on_net_tariff: 
+  comm_off_net_tariff,: MyString
+  comm_atw,: MyString
+  comm_call_destination: MyString
+
+two:
+  name: 
+  comm_pulse: 
+  comm_on_net_tariff: 
+  comm_off_net_tariff,: MyString
+  comm_atw,: MyString
+  comm_call_destination: MyString

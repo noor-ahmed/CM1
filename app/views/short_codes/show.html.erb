@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @short_code.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @short_code.phone %>
+</p>
+
+<p>
+  <strong>Tariff:</strong>
+  <%= @short_code.tariff %>
+</p>
+
+<%= link_to 'Edit', edit_short_code_path(@short_code) %> |
+<%= link_to 'Back', short_codes_path %>

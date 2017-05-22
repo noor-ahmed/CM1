@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pulse: MyString
+  tariff: 1.5
+  number_prefix: MyString
+
+two:
+  pulse: MyString
+  tariff: 1.5
+  number_prefix: MyString

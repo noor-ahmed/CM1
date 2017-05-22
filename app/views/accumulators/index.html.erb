@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Accumulators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Acc val change</th>
+      <th>Acc val available</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @accumulators.each do |accumulator| %>
+      <tr>
+        <td><%= accumulator.acc_val_change %></td>
+        <td><%= accumulator.acc_val_available %></td>
+        <td><%= link_to 'Show', accumulator %></td>
+        <td><%= link_to 'Edit', edit_accumulator_path(accumulator) %></td>
+        <td><%= link_to 'Destroy', accumulator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Accumulator', new_accumulator_path %>

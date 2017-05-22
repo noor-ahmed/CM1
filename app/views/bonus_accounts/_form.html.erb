@@ -1,0 +1,62 @@
+<%= form_for(bonus_account) do |f| %>
+  <% if bonus_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bonus_account.errors.count, "error") %> prohibited this bonus_account from being saved:</h2>
+
+      <ul>
+      <% bonus_account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ba_val_available %>
+    <%= f.text_field :ba_val_available %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ba_val_change %>
+    <%= f.text_field :ba_val_change %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ba_val_before %>
+    <%= f.text_field :ba_val_before %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ba_pulse %>
+    <%= f.text_field :ba_pulse %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ba_on_net_tariff %>
+    <%= f.text_field :ba_on_net_tariff %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ba_off_net_tariff %>
+    <%= f.text_field :ba_off_net_tariff %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ba_atw %>
+    <%= f.text_field :ba_atw %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ba_call_destination, %>
+    <%= f.text_field :ba_call_destination, %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ba_priority %>
+    <%= f.number_field :ba_priority %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

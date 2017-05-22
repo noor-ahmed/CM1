@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: 
+  service_pulse: 
+  service_on_net_tariff: 
+  service_off_net_tariff,: MyString
+  service_atw,: MyString
+  service_call_destination: MyString
+  service_priority: 1
+
+two:
+  name: 
+  service_pulse: 
+  service_on_net_tariff: 
+  service_off_net_tariff,: MyString
+  service_atw,: MyString
+  service_call_destination: MyString
+  service_priority: 1

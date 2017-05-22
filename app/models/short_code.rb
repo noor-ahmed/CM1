@@ -1,0 +1,2 @@
+class ShortCode < ApplicationRecord
+end

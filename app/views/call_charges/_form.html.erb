@@ -1,0 +1,17 @@
+<%= form_for(call_charge) do |f| %>
+  <% if call_charge.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(call_charge.errors.count, "error") %> prohibited this call_charge from being saved:</h2>
+
+      <ul>
+      <% call_charge.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

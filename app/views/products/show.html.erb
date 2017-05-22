@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Product pulse:</strong>
+  <%= @product.product_pulse %>
+</p>
+
+<p>
+  <strong>Product on net tariff:</strong>
+  <%= @product.product_on_net_tariff %>
+</p>
+
+<p>
+  <strong>Product off net tariff:</strong>
+  <%= @product.product_off_net_tariff %>
+</p>
+
+<p>
+  <strong>Product atw:</strong>
+  <%= @product.product_atw %>
+</p>
+
+<p>
+  <strong>Product call destination:</strong>
+  <%= @product.product_call_destination %>
+</p>
+
+<p>
+  <strong>Product priority:</strong>
+  <%= @product.product_priority %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

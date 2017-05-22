@@ -1,0 +1,47 @@
+<%= form_for(fnf_item) do |f| %>
+  <% if fnf_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fnf_item.errors.count, "error") %> prohibited this fnf_item from being saved:</h2>
+
+      <ul>
+      <% fnf_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :no_of_fnf %>
+    <%= f.number_field :no_of_fnf %>
+  </div>
+
+  <div class="field">
+    <%= f.label :pulse %>
+    <%= f.text_field :pulse %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fnf_on_net_tariff %>
+    <%= f.text_field :fnf_on_net_tariff %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fnf_off_net_tariff %>
+    <%= f.text_field :fnf_off_net_tariff %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fnf_atw %>
+    <%= f.text_field :fnf_atw %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fnf_priority %>
+    <%= f.number_field :fnf_priority %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
