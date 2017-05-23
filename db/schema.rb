@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170522201324) do
+ActiveRecord::Schema.define(version: 20170523051337) do
 
   create_table "accumulators", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.float    "acc_val_change",    limit: 24
@@ -162,6 +162,26 @@ ActiveRecord::Schema.define(version: 20170522201324) do
     t.datetime "updated_at",      null: false
     t.index ["offer_id"], name: "index_user_offers_on_offer_id", using: :btree
     t.index ["user_account_id"], name: "index_user_offers_on_user_account_id", using: :btree
+  end
+
+  create_table "user_products", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_account_id"
+    t.integer  "product_id"
+    t.integer  "priority_value"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["product_id"], name: "index_user_products_on_product_id", using: :btree
+    t.index ["user_account_id"], name: "index_user_products_on_user_account_id", using: :btree
+  end
+
+  create_table "user_services", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "user_account_id"
+    t.integer  "service_id"
+    t.integer  "priority_value"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["service_id"], name: "index_user_services_on_service_id", using: :btree
+    t.index ["user_account_id"], name: "index_user_services_on_user_account_id", using: :btree
   end
 
 end

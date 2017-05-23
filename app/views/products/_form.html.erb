@@ -46,6 +46,18 @@
     <%= f.number_field :product_priority %>
   </div>
 
+  <div class="field">
+    <%= f.label :fnf_item_ids, "Fnfs" %><br />
+    <%= f.collection_select :fnf_item_id, FnfItem.order(:no_of_fnf), :id, :no_of_fnf, {}, {multiple: false} %>
+
+  </div>
+
+    <div class="field">
+      <%= f.label :community_ids, "Communities" %><br />
+      <%= f.collection_select :community_id, Community.order(:name), :id, :name, {}, {multiple: false} %>
+    </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
