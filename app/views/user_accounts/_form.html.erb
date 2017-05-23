@@ -26,6 +26,17 @@
     <%= f.text_field :account_balance %>
   </div>
 
+    <div class="field">
+    <%= f.label :product_ids, "Products" %><br />
+    <%= f.collection_select :product_id, Product.order(:name), :id, :name, {}, {multiple: false} %>
+
+  </div>
+
+  <div class="field">
+    <%= f.label :service_ids, "Communities" %><br />
+    <%= f.collection_select :service_id, Service.order(:name), :id, :name, {}, {multiple: false} %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

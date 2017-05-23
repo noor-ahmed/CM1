@@ -10,6 +10,10 @@ class UserAccountsController < ApplicationController
   # GET /user_accounts/1
   # GET /user_accounts/1.json
   def show
+    @user_product = @user_account.product
+    @user_service = @user_account.service
+    @user_offers = @user_account.offers.all
+    @user_bonus_account = @user_account.bonus_accounts.all
   end
 
   # GET /user_accounts/new
@@ -69,6 +73,6 @@ class UserAccountsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_account_params
-      params.require(:user_account).permit(:phone, :name, :account_balance)
+      params.require(:user_account).permit(:phone, :name, :account_balance, :product_id, :service_id)
     end
 end
