@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-  has_one :fnf_item
-  has_one :community
+  belongs_to :fnf_item
+  belongs_to :community
   has_many :user_accounts
 end
