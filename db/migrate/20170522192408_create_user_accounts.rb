@@ -4,8 +4,8 @@ class CreateUserAccounts < ActiveRecord::Migration[5.0]
       t.string :phone
       t.string :name
       t.float :account_balance
-      t.belongs_to :product, index: true
-      t.belongs_to :service, index: true
+      t.references :product, index: true
+      t.references :service, index: true
 
       t.timestamps
     end

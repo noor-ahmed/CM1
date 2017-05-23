@@ -1,6 +1,6 @@
 class UserAccount < ApplicationRecord
-  has_one :product
-  has_one :service
+  belongs_to :product
+  belongs_to :service
   has_many :bonus_accounts
   has_many :user_offers
   has_many :offers, through: :user_offers
